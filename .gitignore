@@ -1,3 +1,2 @@
 .env
 output/steam_api_cache.sqlite
-reviews_1000.jsonl
