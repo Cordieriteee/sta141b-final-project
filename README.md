@@ -24,6 +24,8 @@ The repository is organized into several modules, separating data preprocessing,
 1.  **Data Collection & Engineering**: Data extraction leveraging Steam App IDs, and scraping owner range data from SteamSpy, followed by data cleaning and missing value imputation.
 2.  **Natural Language Processing (NLP)**: Implementation of Term Frequency-Inverse Document Frequency (TF-IDF) via `scikit-learn`. This step vectorizes textual review data while applying threshold filters (e.g., maximum document frequency) to prevent overfitting and optimize computational efficiency.
 3.  **Predictive Modeling**: Utilization of eXtreme Gradient Boosting (XGBoost) to construct an ensemble learning model. The algorithm is trained to minimize the regularized objective function, capturing complex nonlinear relationships within the features.
+4. **Discount and Recommendation Analysis**:  
+Analysis of the relationship between discount percentage, initial game price, and player recommendation outcomes. This section applies log transformation to recommendation counts to reduce skewness, followed by exploratory visualization, correlation analysis, Ordinary Least Squares (OLS) regression, and Random Forest modeling to evaluate the relative importance of pricing strategies compared with structural game features.
 
 ## Usage and Replication
 To reproduce the analysis, execute the notebooks in the following sequence:
