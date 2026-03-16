@@ -1,7 +1,7 @@
 # STA 141B Final Project: Factors Driving Success on Steam: A Data-Driven Analysis
 
 ## Project Overview
-This repository contains the code and data for the STA 141B final project. The study focuses on analyzing Steam store data to explore the underlying relationships between game metadata, user review sentiments, discount behavior, and commercial performance (e.g., game sales or ownership). Advanced machine learning algorithms and natural language processing techniques are applied to extract features and construct predictive models.
+This repository contains the code and data for the STA 141B final project in Winter 2026 UCdavis. The study focuses on analyzing Steam store data to explore the underlying relationships between game metadata, user review sentiments, discount behavior, and commercial performance (e.g., game sales or ownership). Advanced machine learning algorithms and natural language processing techniques are applied to extract features and construct predictive models.
 
 ## Repository Structure
 The repository is organized into several modules, separating data preprocessing, exploratory data analysis (EDA), and final model training:
