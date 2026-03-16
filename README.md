@@ -13,6 +13,7 @@ The repository is organized into several modules, separating data preprocessing,
 
   * `1000games.ipynb`: Notebook for fetching, filtering, cleaning a specific subset of 1000 representative games.
   * `steam_1000.jsonl`: The cleaned dataset comprising the subset of 1000 games.
+  * `reviews_1000.jsonl (Large File)`: The core dataset for textual analysis, containing 98,038 player reviews linked to the subset of 1000 games. Note: This file is managed via Git LFS.
 
 * **`part1/`**: Files using in part 1
   * `part1.ipynb`: all coding, containging feching data from SteamSpy, data preprocessing, model training and virtualization
@@ -30,8 +31,9 @@ Analysis of the relationship between discount percentage, initial game price, an
 ## Usage and Replication
 To reproduce the analysis, execute the notebooks in the following sequence:
 1.  Execute `1000games.ipynb` to generate the core dataset (`steam_1000.jsonl`).
-2.  Navigate to the `part1/` directory and run `part1.ipynb` for data preprocessing and model building in part 1
-3.  Run `Q2.ipynb` and `Question 3.ipynb` to review the specific statistical testing and feature engineering steps.
+2. Prerequisites: Ensure you have **Git LFS** installed. After cloning the repository, run `git lfs pull` to ensure the `reviews_1000.jsonl` dataset is fully downloaded before running the notebooks.
+3.  Navigate to the `part1/` directory and run `part1.ipynb` for data preprocessing and model building in part 1
+4.  Run `Q2.ipynb` and `Question 3.ipynb` to review the specific statistical testing and feature engineering steps.
 If you would like to know data structure of Steam API, run `sample data.ipynb` and check `sample_app_data.json` in `sample data\`
 
 ## Dependencies
@@ -51,3 +53,8 @@ Ensure a standard scientific Python environment is configured with the following
 * `saeborn`
 * `sklearn`
 * `xgboost`
+
+## References
+
+* **[1]** Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A Scalable Tree Boosting System. In *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining* (KDD '16). Association for Computing Machinery, New York, NY, USA, 785–794. [https://doi.org/10.1145/2939672.2939785](https://doi.org/10.1145/2939672.2939785)
+* **[2]** Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schütze. 2008. *Introduction to Information Retrieval*. Cambridge University Press, USA. [https://nlp.stanford.edu/IR-book/](https://nlp.stanford.edu/IR-book/)
